@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Proyecto Super Mario 2</title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./assets/img/logo-header.png" alt="logo-header">
+        <a href="./index.html">Home</a>
+        <a href="./nossos-serviços.html">Nossos Serviços</a>
+        <a href="https://wa.link/1xqv37">Fale Conosco</a>
+    </div>
+    <div class="caixa-mae">
+        <div class="sobre-nos">
+            <img src="./assets/img/logo.png" class="logo" alt="logo">
+            <p>
+                🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧
+            </p>
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+            <button class="main-button" onclick="showForm()">Entre em Contato</button>
+        </div>
+    </div>
+    <div class="div-right">
+        <img src="./assets/img/mario.png" class="mario" alt="Mario y Luigi">
+        <a href="https://wa.link/1xqv37" class="whatsapp"><img class="logo-whatsapp"
+                src="./assets/img/whatsapp.png" /></a>
+    </div>
+    <div class="video">
+        <video src="./assets/video/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/RnNaDr0X2Oo"
+        method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Seu nome" name="name" type="text">
+        <input placeholder="Seu telefone" name="telefone" type="tel">
+        <textarea placeholder="Digite seu problema" name="seuProblema"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+    <div onclick="hideMasck()" class="mascara-form"></div>
+
+</body>
+<script src="./script.js"></script>
+</html>
