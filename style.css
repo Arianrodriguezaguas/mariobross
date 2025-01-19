@@ -225,10 +225,13 @@ h1 {
     }
 
     .mario {
-        display: none;
-        width: 10vw;
+        width: 39vw;
         height: auto;
         margin-top: 50px;
+        position: absolute;
+        top: 7%;
+        right: 5%;
+        opacity: 85%;
     }
 
     .header {
