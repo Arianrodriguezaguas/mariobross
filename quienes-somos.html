@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./quienes-somos.css">
+    <title>quienes-somos</title>
+</head>
+<body>
+    <div class="header">
+        <img src="./assets/img/tooth dental care logo.png" alt="logo-header">
+        <a href="./index.html">Página Principal</a>
+        <a href="./nossos-serviços.html">Nuestros Servicios</a>
+        <a href="./quienes-somos.html">Quienes Somos</a>
+    </div>
+    <div class="caixa-mae">
+        <div class="sobre-nos">
+            <h1>Quienes Somos</h1>
+            <h3>
+                Odontología Para Todos:
+            </h3>
+            <p>
+                Es una clínica dental ubicada en la calle 
+                República Dominicana numero 2928 en Montevideo Uruguay; comprometida con brindar 
+                atención integral de calidad para toda la familia. Estamos emocionados 
+                de comenzar nuestra labor en esta comunidad, comprometidos con ser una 
+                opción accesible para todos. Sabemos lo importante que es cuidar tu salud 
+                bucal sin que esto represente una carga económica, por lo que ofrecemos precios
+                justos y competitivos, adecuados para todos los presupuestos. Queremos ganarnos 
+                tu confianza desde el primer día, ofreciendo atención de calidad, tecnología moderna 
+                y un trato cercano que te hará sentir como en casa. ¡Te invitamos a visitarnos y 
+                descubrir cómo podemos ayudarte a lucir una sonrisa saludable y radiante! 
+            </p>
+            <button class="main-button" onclick="showForm()">Contactar por EMAIL</button>
+            
+        </div>
+    </div>
+    <<div class="div-right">
+        <!-- Convertimos el H2 en un enlace -->
+        <a href="https://www.google.com/maps?q=C. República Dominicana 2928 Montevideo Uruguay" 
+            target="_blank" 
+            style="text-decoration: none; color: #fff;">
+            <h2 class="title">Ir a Google Maps</h2>
+        </a>
+        <div>
+            <iframe class="maps" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.7627045966615!2d-56.15735462433119!3d-34.88730461285867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80fbdb8e8e53%3A0x4d7b256a4bf269f1!2sC.%20Rep%C3%BAblica%20Dominicana%202928%2C%2011600%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses!2sbr!4v1737303018731!5m2!1ses!2sbr" 
+                width="300" 
+                height="250" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+        <a href="https://wa.link/x307hy" class="whatsapp"><img class="logo-whatsapp"
+                src="./assets/img/icon whatsapp .png" /></a>
+    </div>
+    <div class="video">
+        <video src="./assets/video/Video de Fondo.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/RnNaDr0X2Oo"
+        method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Digite su nombre" name="name" type="text">
+        <input placeholder="Digite su telefono" name="telefone" type="tel">
+        <textarea placeholder="Como podemos ayudarle?" name="seuProblema"></textarea>
+        <button type="submit">Pedir Consulta</button>
+    </form>
+    <div onclick="hideMasck()" class="mascara-form"></div>
+
+</body>
+<script src="./script.js"></script>
+</html>
