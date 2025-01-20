@@ -97,18 +97,30 @@ p {
     right: 40px;
     bottom: 50px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: heartbeat 1.5s infinite; /* Aplica la animación */
 }
 
+/* Efecto al pasar el mouse por encima */
 .whatsapp img:hover {
     transform: scale(1.1); /* Aumenta ligeramente el tamaño */
     opacity: 0.9; /* Reduce ligeramente la opacidad */
 }
 
+/* Efecto al hacer clic */
 .whatsapp img:active {
     transform: scale(0.95); /* Reduce el tamaño al hacer clic */
     opacity: 0.8; /* Reduce aún más la opacidad */
 }
 
+/* Animación del latido */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.2); /* Tamaño agrandado (latido) */
+    }
+}
 .header {
     display: flex;
     align-items: center;
@@ -171,7 +183,7 @@ textarea {
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    background: linear-gradient(109deg, rgba(29, 58, 114, 99%) 15%, rgba(6, 20, 51, 90%) 50%, rgba(5, 5, 6, 99%) 85%);
     transition: visibility 0.2s;
 }
 
